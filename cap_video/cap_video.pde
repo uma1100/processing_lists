@@ -14,8 +14,8 @@ public void setup(){
 public void draw(){
   background(0);
   strokeWeight(2.0);
-  float hStep = 8.0;
-  float wStep = 8.0;
+  float hStep = 4.0;
+  float wStep = 4.0;
   for(float j=0;j<height;j+=hStep){
     beginShape();
     for(float i=0;i<width;i+=wStep){
@@ -30,4 +30,8 @@ public void draw(){
 
 void captureEvent(Capture c){
   cam.read();
+}
+
+void mousePressed(){
+  saveFrame("frames/###.png");
 }
