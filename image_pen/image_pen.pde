@@ -1,7 +1,7 @@
 // キャンバスから採色してペンに
 
 void setup() {
-  size(1500, 1125);
+  size(1500, 1000);
   background(255);
   noStroke();
 
