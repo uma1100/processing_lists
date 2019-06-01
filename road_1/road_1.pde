@@ -10,6 +10,11 @@ void setup() {
     float y=random(height);
     float rectsize=random(y/10);
     fill(random(0,200),random(0,127),random(0,255),50);
+    rect(x,y,rectsize, rectsize);
+    x=random(0,max); 
+    y=random(height);
+    rectsize=random(y/20);
+    fill(random(0,200),random(0,127),random(0,255),50);
     ellipse(x,y,rectsize, rectsize);
   }
   //  for(int i=0; i<1000;i++){
@@ -22,6 +27,10 @@ void setup() {
   //}
 }
 
+void draw(){
+}
+
 void mousePressed(){
   saveFrame("frames/###.png");
+  println("clicked");
 }
