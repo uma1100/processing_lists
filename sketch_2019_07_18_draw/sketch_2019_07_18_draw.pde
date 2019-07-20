@@ -86,8 +86,8 @@ void drawShape(float posX, float posY, float size) {
 color randomColor() {
   float r = random(1);
 
-  if (r > 0.83) return color(0, 100, 100);
-  else if (r > 0.66) return color(29, 100, 100);
+  if (r > 0.83) return color(0, 0, 0);
+  else if (r > 0.66) return color(255, 255, 255);
   else if (r > 0.50) return color(98, 100, 100);
   else if (r > 0.34) return color(186, 100, 100);
   else if (r > 0.18) return color(308, 100, 100);
