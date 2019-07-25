@@ -1,5 +1,5 @@
 void setup() {
-  size(1200, 600);
+  size(600, 600);
 
   colorMode(HSB, 360, 100, 100);
   noStroke();
@@ -84,3 +84,8 @@ void mousePressed() {
 
 void draw() {
 }
+
+void keyPressed(){
+  if (key == "s")saveFrame("####.png");
+}
+    
