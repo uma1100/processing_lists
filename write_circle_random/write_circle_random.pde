@@ -16,6 +16,7 @@ float y_axis;
 void draw(){
   while(true){
     N = (int)random(1,5);
+    N = 2;
     for(int i=0; i< N; i++){
       if(N==1){
         fill(234,244,252,random(100,200));
@@ -43,6 +44,7 @@ void draw(){
       y_start += plus;
     }
     if(y_start > height-100){
+     //if(y_start > 0){
       break;
     }
   }
@@ -50,5 +52,6 @@ void draw(){
 }
 
 void mousePressed(){
-  saveFrame("frames/red.png");
+  //saveFrame("frames/red.png");
+  //draw();
 }
